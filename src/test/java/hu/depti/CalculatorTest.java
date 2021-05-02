@@ -54,4 +54,9 @@ public class CalculatorTest {
     assertEquals(0, calculator.divide(0, 5), "Devide with zero should be throw an Exception");
     assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0));
   }
+  @Test
+  @DisplayName("Simple modulo should work")
+  public void testModulo(){
+    assertEquals(1,calculator.modulo(7,2), "Regular modulo should work");
+  }
 }
